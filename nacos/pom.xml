@@ -11,6 +11,11 @@
         <artifactId>springcloud_alibaba</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
+
+    <modules>
+        <module>nacos_consumer</module>
+        <module>nacos_provider</module>
+    </modules>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
