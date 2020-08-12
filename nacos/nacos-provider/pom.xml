@@ -7,9 +7,9 @@
         <artifactId>nacos</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>nacos_provider</artifactId>
+    <artifactId>nacos-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>nacos_provider</name>
+    <name>nacos-provider</name>
     <description>Demo project for Spring Boot</description>
 
 
