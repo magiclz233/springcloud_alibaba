@@ -34,6 +34,7 @@ public class Producer {
         for (int i = 0; i < orderList.size(); i++) {
             String body = now + "Hello RocketMQ" + orderList.get(i);
             Message msg = new Message("TopicTest", tags[i % tags.length], "Key" + i, body.getBytes());
+            // 有序消费规则 MessageQueueSelector
             SendResult sendResult = producer.send(msg, new MessageQueueSelector() {
                 /*
                 这块是重新定义Producer发送消息传入的队列的规则
