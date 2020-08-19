@@ -1,13 +1,10 @@
 package com.magic.rocketmq.batch;
 
 import com.magic.rocketmq.quickstart.Producer;
-import org.apache.rocketmq.client.exception.MQBrokerException;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.common.message.Message;
-import org.apache.rocketmq.remoting.exception.RemotingException;
 
-import javax.xml.stream.events.StartDocument;
 import java.util.ArrayList;
 import java.util.List;
 
