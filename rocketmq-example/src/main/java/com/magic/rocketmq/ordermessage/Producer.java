@@ -38,7 +38,7 @@ public class Producer {
                 /*
                 这块是重新定义Producer发送消息传入的队列的规则
                 后面的 orderList.get(i).getOrderId() 是你要传入的来制定规则的参数
-                此处用了orderId
+                此处用的是 orderId 你也可以结合情况用其他的
                 在 select 就是 最后的 Object 参数
                  当 producer send msg后
                  根据orderId % List<MessageQueue> 将msg传入到不同的queue中去

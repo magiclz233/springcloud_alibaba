@@ -25,10 +25,9 @@ public class Consumer {
     public static void main(String[] args) throws MQClientException {
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("default_consumer_order_demo_one");
         consumer.setNamesrvAddr(Producer.NAME_SERVER_ADDR);
-        /**
-         * 设置Consumer第一次启动是从队列头部开始消费还是队列尾部开始消费
-         * 如果非第一次启动,那么按照上次消费的位置继续消费
-         */
+
+         // 设置Consumer第一次启动是从队列头部开始消费还是队列尾部开始消费
+         //如果非第一次启动,那么按照上次消费的位置继续消费
         consumer.setConsumeFromWhere(ConsumeFromWhere.CONSUME_FROM_FIRST_OFFSET);
         // 指定 topic和tags
         consumer.subscribe("TopicTest","TagA || TagC || TagD");
