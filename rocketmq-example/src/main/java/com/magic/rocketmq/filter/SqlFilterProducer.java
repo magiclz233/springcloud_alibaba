@@ -23,7 +23,7 @@ public class SqlFilterProducer {
 
         producer.start();
         String[] tags = new String[]{"TagA", "TagB", "TagC"};
-        for (int i = 0; i < 99; i++) {
+        for (int i = 0; i < 10; i++) {
             Message msg = new Message("TopicTest", tags[i % tags.length], ("Hello RocketMQ" + i).getBytes(StandardCharsets.UTF_8));
             msg.putUserProperty("a", String.valueOf(i));
             try {
