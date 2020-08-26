@@ -8,6 +8,7 @@ import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.common.consumer.ConsumeFromWhere;
 import org.apache.rocketmq.common.message.MessageExt;
 
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -28,6 +29,12 @@ public class Consumer {
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext context) {
+                // 为什么要用list存储,因为可以一次传多个 Message 过来组成 List<Message>
+                System.out.println(list.size());
+                for (MessageExt msg : list) {
+                    byte[] body = msg.getBody();
+                    System.out.println("传输过来的消息"+ new String(body));
+                }
                 System.out.println(Thread.currentThread().getName() + "  :  " + list.toString());
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
             }
