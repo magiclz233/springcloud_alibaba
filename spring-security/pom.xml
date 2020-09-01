@@ -12,6 +12,7 @@
     <artifactId>spring-security</artifactId>
     <modules>
         <module>security-simple</module>
+        <module>security-jwt-simple-demo</module>
     </modules>
 
 </project>
