@@ -3,9 +3,11 @@ package com.magic.system.exception;
 import org.springframework.security.core.AuthenticationException;
 
 /**
- * @author shuang.kou
- * @createTime 2020年08月08日 20:57:00
- **/
+ * @author magic_lz
+ * @version 1.0
+ * @classname UserNameNotFoundException
+ * @date 2020/9/3 : 14:47
+ */
 public class LoginFailedException extends AuthenticationException {
     public LoginFailedException(String detail) {
         super(detail);
