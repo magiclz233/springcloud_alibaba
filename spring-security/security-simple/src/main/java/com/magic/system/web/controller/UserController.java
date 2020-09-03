@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.validation.Valid;
 
 /**
- * @author shuang.kou
+ * @author magic_lz
  */
 @RestController
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))

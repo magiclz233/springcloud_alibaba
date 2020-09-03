@@ -16,7 +16,7 @@ import javax.persistence.MappedSuperclass;
 import java.time.Instant;
 
 /**
- * @author shuang.kou
+ * @author magic_lz
  */
 @Data
 @AllArgsConstructor

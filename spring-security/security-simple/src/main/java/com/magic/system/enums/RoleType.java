@@ -3,7 +3,7 @@ package com.magic.system.enums;
 import lombok.Getter;
 
 /**
- * @author shuang.kou
+ * @author magic_lz
  */
 
 @Getter

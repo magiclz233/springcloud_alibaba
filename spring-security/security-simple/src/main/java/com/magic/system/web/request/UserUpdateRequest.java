@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 import javax.validation.constraints.NotBlank;
 
 /**
- * @author shuang.kou
+ * @author magic_lz
  */
 @Data
 @AllArgsConstructor

@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * @author shuang.kou
+ * @author magic_lz
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

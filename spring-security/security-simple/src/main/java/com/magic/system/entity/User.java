@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author shuang.kou
+ * @author magic_lz
  */
 @EqualsAndHashCode(callSuper = true)
 @Data

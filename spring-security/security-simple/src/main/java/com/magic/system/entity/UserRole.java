@@ -7,6 +7,9 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.io.Serializable;
 
+/**
+ * @author magic_lz
+ */
 @EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
