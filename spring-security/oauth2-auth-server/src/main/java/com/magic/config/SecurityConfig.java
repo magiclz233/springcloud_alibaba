@@ -12,7 +12,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 /**
  * @author magic_lz
  * @version 1.0
- * @classname WebSecurityConfig
+ * @classname SecurityConfig
  * @date 2020/9/2 : 17:53
  */
 
