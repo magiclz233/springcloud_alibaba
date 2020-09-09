@@ -3,7 +3,7 @@ spring:
     name: auth-server
   redis:
     database: 0
-    host:
+    host: 49.233.129.28
     port: 6379
     password:
     jedis:
@@ -19,3 +19,6 @@ management:
   endpoint:
     health:
       enabled: true
+
+##开启日志DEBUG级别，便于查看调试信息
+logging.level.org.springframework.security: DEBUG
