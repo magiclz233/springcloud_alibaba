@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import org.springframework.security.core.GrantedAuthority;
 
 /**
  * @author magic_lz
@@ -16,7 +17,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(of = "authority")
-public class SysAuthority {
+public class SysAuthority implements GrantedAuthority {
     /**
      * 权限
      */
