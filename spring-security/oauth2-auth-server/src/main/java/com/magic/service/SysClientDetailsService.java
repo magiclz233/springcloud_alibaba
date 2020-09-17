@@ -11,6 +11,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * OAuth客户端服务
+ *
  * @author magic_lz
  * @version 1.0
  * @date 2020/9/16 21:25
@@ -18,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 @Service
 public class SysClientDetailsService {
 
-    public BaseClientDetails selectById(String clientId){
+    public BaseClientDetails selectById(String clientId) {
         BaseClientDetails clientDetails = new BaseClientDetails();
         clientDetails.setAuthorities(new ArrayList<>());
         clientDetails.setClientId("magic");
@@ -26,7 +27,7 @@ public class SysClientDetailsService {
         clientDetails.setClientSecret("$2a$10$WXF5lxbSGw0766M4h5DPO.gQdLbukHCG31qOo/LNlQNGnyaiGkWj2");
         // 设置accessToken和refreshToken的时效，如果不设置则使tokenServices的配置的
         clientDetails.setAccessTokenValiditySeconds((int) TimeUnit.HOURS.toSeconds(2));
-        clientDetails.setRefreshTokenValiditySeconds((int)TimeUnit.DAYS.toSeconds(30));
+        clientDetails.setRefreshTokenValiditySeconds((int) TimeUnit.DAYS.toSeconds(30));
         // 资源id列表，需要注意的是这里配置的需要与ResourceServerConfig中配置的相匹配
         List<String> resourceIds = new ArrayList<>();
         resourceIds.add("auth-server");

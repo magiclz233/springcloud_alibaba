@@ -27,8 +27,8 @@ public class ClientDetailsServiceImpl implements ClientDetailsService {
     public ClientDetails loadClientByClientId(String clientId) throws ClientRegistrationException {
         log.info("客户端查询 : {}", clientId);
         BaseClientDetails clientDetails = clientDetailsService.selectById(clientId);
-        if(clientDetails == null){
-            throw new NoSuchClientException("没有找到该clientId : "+clientId);
+        if (clientDetails == null) {
+            throw new NoSuchClientException("没有找到该clientId : " + clientId);
         }
         return clientDetails;
     }
