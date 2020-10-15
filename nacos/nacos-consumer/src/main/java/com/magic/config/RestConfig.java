@@ -21,14 +21,14 @@ public class RestConfig {
 
     @Bean
     @LoadBalanced
-    @SentinelRestTemplate(urlCleanerClass = UrlCleaner.class,urlCleaner = "clean")
+//    @SentinelRestTemplate(urlCleanerClass = UrlCleaner.class,urlCleaner = "clean")
     public RestTemplate restTemplate(){
         return new RestTemplate();
     }
 
     @Bean
     @LoadBalanced
-    @SentinelRestTemplate
+//    @SentinelRestTemplate
     public RestTemplate restTemplate1(){
         return new RestTemplate();
     }

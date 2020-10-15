@@ -8,4 +8,5 @@ package com.magic.service;
  * @date 2020/5/8   16:34
  **/
 public interface TestService {
+
 }
