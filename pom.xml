@@ -12,6 +12,7 @@
         <module>nacos</module>
         <module>rocketmq-example</module>
         <module>spring-security</module>
+        <module>elasticsearch-example</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
