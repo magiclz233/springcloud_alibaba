@@ -6,7 +6,7 @@
         <groupId>com.magic</groupId>
         <artifactId>springcloud_alibaba</artifactId>
         <version>0.0.1-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+<!--        <relativePath/> &lt;!&ndash; 从存储库查找父级 lookup parent from repository &ndash;&gt;-->
     </parent>
     <artifactId>rocketmq-example</artifactId>
     <version>0.0.1-SNAPSHOT</version>

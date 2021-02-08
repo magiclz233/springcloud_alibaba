@@ -6,7 +6,7 @@
     <groupId>com.magic</groupId>
     <artifactId>spring-security</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <relativePath/> <!-- lookup parent from repository -->
+<!--    <relativePath/> &lt;!&ndash; lookup parent from repository 从存储库查找父级 &ndash;&gt;-->
   </parent>
   <artifactId>security-jwt-simple-demo</artifactId>
   <version>0.0.1-SNAPSHOT</version>
