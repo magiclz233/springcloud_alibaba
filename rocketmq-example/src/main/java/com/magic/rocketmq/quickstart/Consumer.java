@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class Consumer {
     public static void main(String[] args) throws MQClientException {
-        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("default_push_consumer_demo_one");
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("default_producer_sync_demo_one");
 
         consumer.setNamesrvAddr(Producer.NAME_SERVER_ADDR);
         //  如果指定的消费群体是一个全新的消费群体，请指定从何处开始。

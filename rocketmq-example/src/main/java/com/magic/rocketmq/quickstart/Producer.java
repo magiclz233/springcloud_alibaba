@@ -20,7 +20,7 @@ import java.nio.charset.StandardCharsets;
  */
 
 public class Producer {
-    public static final String NAME_SERVER_ADDR = "49.233.129.28:9876";
+    public static final String NAME_SERVER_ADDR = "106.75.216.194:9876";
     public static void main(String[] args) throws MQClientException, InterruptedException {
         // 实例化生产者Producer, 并赋值组名
         DefaultMQProducer producer = new DefaultMQProducer("default_producer_demo_one");

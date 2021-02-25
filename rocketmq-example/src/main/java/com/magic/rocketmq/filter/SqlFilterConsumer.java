@@ -13,6 +13,7 @@ import java.util.List;
 
 /**
  * 过滤获取你想要的消息
+ *
  * @author magic_lz
  * @version 1.0
  * @date 2020/8/20 0:11
@@ -28,7 +29,7 @@ public class SqlFilterConsumer {
         consumer.registerMessageListener(new MessageListenerConcurrently() {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext context) {
-                System.out.println("Thread Name: "+Thread.currentThread().getName()+"~~"+list.toString());
+                System.out.println("Thread Name: " + Thread.currentThread().getName() + "~~" + list.toString());
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
             }
         });
