@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: redis-lock
+
+  redis:
+    database: 0
+    host: 49.233.129.28
+    port: 6379
+    password:
+    jedis:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+    timeout: 100ms
+server:
+  port: 8989
