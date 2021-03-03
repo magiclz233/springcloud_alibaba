@@ -19,7 +19,7 @@ import java.util.concurrent.TimeUnit;
 @Aspect
 @Component
 public class DistributedLockAspect11 {
-
+    String git = "https://gitee.com/yuanhaobin/distributed-lock  https://gitee.com/rain7564/distributed-lock";
     @Autowired
     private DistributedLockTemplate lockTemplate;
 
