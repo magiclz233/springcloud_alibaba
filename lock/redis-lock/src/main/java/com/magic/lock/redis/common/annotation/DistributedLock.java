@@ -1,5 +1,6 @@
 package com.magic.lock.redis.common.annotation;
 
+import java.lang.annotation.*;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -8,6 +9,9 @@ import java.util.concurrent.TimeUnit;
  * @classname DistributeLock
  * @date 2021/3/3 : 17:12
  */
+@Target({ElementType.METHOD})
+@Retention(RetentionPolicy.RUNTIME)
+@Documented
 public @interface DistributedLock {
 
     /**

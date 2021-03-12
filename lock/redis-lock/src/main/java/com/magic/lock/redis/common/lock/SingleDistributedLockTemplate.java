@@ -2,6 +2,8 @@ package com.magic.lock.redis.common.lock;
 
 import org.redisson.api.RLock;
 import org.redisson.api.RedissonClient;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.util.concurrent.TimeUnit;
 
@@ -11,7 +13,9 @@ import java.util.concurrent.TimeUnit;
  * @classname SingleDistributedLockTemplate
  * @date 2021/3/3 : 17:51
  */
+@Component
 public class SingleDistributedLockTemplate implements DistributedLockTemplate {
+    @Autowired
     private RedissonClient redisson;
 
     public SingleDistributedLockTemplate() {
