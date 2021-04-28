@@ -15,8 +15,8 @@ import org.springframework.stereotype.Component;
 public class Demo01ConsumerError {
 
 
-    @KafkaListener(topics = DemoMessage.TOPIC,
-            groupId = "demo04-consumer-group-" + DemoMessage.TOPIC)
+//    @KafkaListener(topics = DemoMessage.TOPIC,
+//            groupId = "demo04-consumer-group-" + DemoMessage.TOPIC)
     public void onMessage(DemoMessage message) {
         log.info("[onMessage][线程编号:{} 消息内容：{}]", Thread.currentThread().getId(), message);
         // 注意，此处抛出一个 RuntimeException 异常，模拟消费失败
