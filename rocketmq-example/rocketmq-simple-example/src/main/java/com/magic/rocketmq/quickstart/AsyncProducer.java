@@ -1,6 +1,5 @@
 package com.magic.rocketmq.quickstart;
 
-import ch.qos.logback.core.util.TimeUtil;
 import org.apache.rocketmq.client.exception.MQClientException;
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendCallback;
